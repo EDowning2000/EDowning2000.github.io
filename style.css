@@ -1,0 +1,14 @@
+body{
+  text-align: center;
+  color: #007bff;
+  background-image: url(https://images.cdn3.stockunlimited.net/clipart/faceted-white-background_1992885.jpg);
+}
+.intro{
+  padding-top: 75px;
+  padding-right: 125px;
+  padding-left: 125px;
+}
+
+.dontDisplay{
+  display: none;
+}
