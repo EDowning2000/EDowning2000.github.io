@@ -8,19 +8,24 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script> <!--jQuery CDN-->
-      <link rel="stylesheet" href="style.css" type="text/css" > <!--My style sheet-->
+      <link rel="stylesheet" type= "text/css" href="style.css">
   <title>Coding Quiz</title>
 </head>
 <body>
 
+  <div class="timer">
+    <p>70</p>
+  </div>
+
+  <span class="count"></span>
     <div class="intro">
       <h1>Welcome to the Coding Quiz!</h1>
         <p>In this game, you will be presented with questions, answers, and a timer. You will try to answer all the questions in as little time as possible, but there will be a 10 second penalty if you answer incorrectly. Be quick, and be sure! Click the button on the screen when ready to begin!
         </p>
     </div>
-    
-    <button type="button" class="btn btn-primary">Start Now!</button>
-
+    <div class="startTimer">
+    <button type="button" class="btn btn-primary startTimerBtn">Start Now!</button>
+    </div>
 
 
     <div class="firstQ">
@@ -47,6 +52,6 @@
 
 
 
-  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" type="text/javascript" href="script.js">
 </body>
 </html>

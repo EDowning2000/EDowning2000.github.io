@@ -12,3 +12,9 @@ body{
 .dontDisplay{
   display: none;
 }
+
+.timer{
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 20px;
+}
