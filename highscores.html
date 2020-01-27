@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HighScores Page </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="highestScores">Your Current Highest Scores!</h1>
+    <div class="scoresContainer">
+
+    </div>
+
+    <a href="index.html">Back to Homepage!</a>
+
+
+
+
+
+
+
+
+  <script>
+
+    var scoresContainer = document.querySelector(".scoresContainer");
+  
+
+    var localStorageInfo = JSON.parse(localStorage.getItem("topScores"))
+      console.log(localStorageInfo)
+      if(localStorageInfo===null){
+        emptyScoresArray = '[]'
+        localStorage.setItem("topScores", emptyScoresArray)
+        // var localStorageInfo = JSON.parse(localStorage.getItem("topScores" ))
+      }
+      console.log(localStorageInfo)
+         for (var i=0; i < localStorageInfo.length; i++){
+          var p = document.createElement("p")
+          p.textContent= "name: "+ localStorageInfo[i].name +" score: " + localStorageInfo[i].score
+            scoresContainer.append(p)
+         }
+
+
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>

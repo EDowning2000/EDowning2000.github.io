@@ -13,45 +13,37 @@
 </head>
 <body>
 
-  <div class="timer">
-    <p>70</p>
-  </div>
 
-  <span class="count"></span>
     <div class="intro">
       <h1>Welcome to the Coding Quiz!</h1>
         <p>In this game, you will be presented with questions, answers, and a timer. You will try to answer all the questions in as little time as possible, but there will be a 10 second penalty if you answer incorrectly. Be quick, and be sure! Click the button on the screen when ready to begin!
         </p>
-    </div>
-    <div class="startTimer">
-    <button type="button" class="btn btn-primary startTimerBtn">Start Now!</button>
-    </div>
-
-
-    <div class="firstQ">
-      <div class="firstQAnswers"></div>
+        <a href="highscores.html"> Click for HighScores!</a> <br>
+        <button type="button" class="btn btn-primary startTimerBtn">Start Now!</button>
     </div>
 
+    <div class="currentQ dontDisplay">
+      <p id="timer"></p>
+      <p id="displayedQ"></p>
 
-    <div class="secondQ">
-      <div class="secondQAnswers"></div>
+      <div id="choicesContainer"></div>
     </div>
 
+    
 
-    <div class="thirdQ">
-      <div class="thirdQAnswers"></div>
-    </div>
+    <div class="finalScreen dontDisplay">
+      <p>Goodjob! Your high score is <span id="score"></span> Add you initials below!</p>
+      <input  id= "Your-initials" type="text">
+      <button id="submitBtn">Submit</button>
+      <br>
+      <a href="highscores.html"> Click for HighScores!</a>
 
-
-    <div class="fourthQ">
-      <div class="fourthQAnswers"></div>
     </div>
 
 
 
 
 
-
-  <link rel="stylesheet" type="text/javascript" href="script.js">
+<script src="script.js"></script>
 </body>
 </html>
